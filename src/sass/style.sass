@@ -1,0 +1,109 @@
+@import "fonts"
+body
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100vh
+.box
+    border: 10px solid #dddddd
+    width: 450px
+    height: 500px
+    padding: 10px
+    background-color: #F8F8F8
+    &__rb
+        display: flex;
+        align-items: center;
+        p
+            text-transform: uppercase
+            font-family: Bebas;
+            font-size: 20px
+            color: #9a9a9a
+        label
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            padding-left: 25px;
+            margin-right: 15px;
+            margin-top: 27px;
+        label
+            &::before
+                content: "";
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                margin-right: 10px;
+                position: absolute;
+                left: -10px;
+                bottom: 1px;
+                background-color: #fff;
+                border: 3px solid #DADADA
+                border-radius: 60px;
+        input[type="radio"]
+            display: none
+        input[type="radio"]:checked + label:before
+            content: "\•"
+            color: #129bc3
+            border: 3px solid #34648e
+            font-size: 42px
+            border-radius: 80px
+            text-align: center
+            line-height: 18px
+            z-index: 1000
+            margin-top: -10px
+    &__info
+        p
+            color: #A8A8A8
+            font-family: sans-serif
+            font-size: 16px
+    &__price
+        p
+            text-transform: uppercase
+            font-family: sans-serif
+            color: #A8A8A8
+            font-weight: 600
+            font-size: 20px
+        span
+            font-size: 20px
+            font-family: sans-serif
+            color: #378aa9
+    &__dollar
+        color: #378aa9 !important
+    &__usa
+        color: #378aa9 !important
+    &__btn
+        button
+            width: 150px
+            height: 50px
+            border-radius: 60px
+            background-color: green
+            border: none
+            color: #ffffff
+            text-transform: uppercase
+            font-family: sans-serif
+            cursor: pointer
+    &__plan
+        margin-top: 20px
+        p
+            color: #378aa9
+            font-family: sans-serif
+    &__it
+        display: flex
+        justify-content: space-around
+        align-items: center
+        height: 70px
+    &__list
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+    &__results
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    &__price
+        display: flex
+        align-items: center
+.act
+    background-color: rgba(235, 244, 247, 0.5);
+    border: 1px solid blue
